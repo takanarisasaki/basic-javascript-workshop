@@ -50,3 +50,34 @@ console.log(multiply(6,9));
 //When a string is the input, it returns NaN (Not a Number)
 console.log(multiply("hello", 6));
 console.log(multiply("hello", "bye"));
+
+
+//
+function calculate(num1, num2, operation) {
+    
+    if (operation === 'add') {
+        return num1 + num2;
+    }
+    
+    else if (operation === 'subtract') {
+        return num1 - num2;
+    }
+    
+    else if (operation === 'mult') {
+        return num1 * num2;
+    }
+    
+    else if (operation === 'div') {
+        return num1 / num2;
+    }
+    
+    else {
+        return 0;
+    }
+    
+}
+console.log(calculate(5,8,"add"));
+console.log(calculate(5,8,"subtract"));
+console.log(calculate(5,8,"mult"));
+console.log(calculate(5,8,"div"));
+console.log(calculate(5,8,"hello"));
