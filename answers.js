@@ -96,7 +96,7 @@ function repeatedString(inputString, numRepeated) {
 console.log(repeatedString("My bad", 10));
 
 
-//Question 8: Reverse String
+//Q8: Reverse String
 function reverse(inputString) {
     var reversedString = "";
     for (var i = inputString.length; i > 0; i--) {
@@ -110,7 +110,7 @@ console.log(reverse("I'm sleepy!"));
 console.log(reverse("    "));
 
 
-//Question 9: Factorials
+//Q9: Factorials
 function factorial(num) {
     var factorialNum = 1;
     for (var i = num; i > 0; i--) {
@@ -119,3 +119,22 @@ function factorial(num) {
     return factorialNum;
 }
 console.log(factorial(6));
+
+
+//Q10: Find the longest word in a string
+function longestWord(inputString) {
+    var splitString = inputString.split(" ");
+    var longest = 0;
+    var longestWord = "";
+    for (var i = 0; i < splitString.length; i++) {
+        if (splitString[i].length > longest) {
+            longest = splitString[i].length;
+            longestWord = splitString[i];
+        }
+    }
+    return longestWord;
+}
+
+console.log(longestWord("Hello, my name is Takanari Sasaki"));
+
+
