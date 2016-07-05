@@ -154,3 +154,18 @@ function capitalizeEveryWord(inputString) {
 }
 
 console.log(capitalizeEveryWord("HellO, my naMe is TakaNari"));
+
+
+//Q12: Largest number of the array
+function largestNumInArray(inputArray) {
+    var largestNum = 0;
+    for (var i = 0; i < inputArray.length; i++) {
+        if (inputArray[i] > largestNum) {
+            largestNum = inputArray[i];
+        }
+    }
+    return largestNum;
+}
+
+var arrayNum = [8,211,5,8,9,10,4,34,1];
+console.log(largestNumInArray(arrayNum));
