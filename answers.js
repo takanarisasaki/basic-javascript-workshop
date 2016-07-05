@@ -178,3 +178,16 @@ function filteredArray(inputArray) {
 
 var inputArray = [true, false, null, undefined, 0, 1, 15, "hello"];
 console.log(filteredArray(inputArray));
+
+
+//Q14: Sum of Numbers in array
+function sumOfNumOfArray(inputArray) {
+    var sum = 0;
+    for (var i = 0; i < inputArray.length; i++) {
+        sum += inputArray[i];
+    }
+    return sum;
+}
+
+var numArray = [3,5,7,2,8,10];
+console.log(sumOfNumOfArray(numArray));
