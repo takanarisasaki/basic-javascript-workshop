@@ -169,3 +169,12 @@ function largestNumInArray(inputArray) {
 
 var arrayNum = [8,211,5,8,9,10,4,34,1];
 console.log(largestNumInArray(arrayNum));
+
+
+//Q13: Returns a filtered array
+function filteredArray(inputArray) {
+    return inputArray.filter(Boolean);
+}
+
+var inputArray = [true, false, null, undefined, 0, 1, 15, "hello"];
+console.log(filteredArray(inputArray));
