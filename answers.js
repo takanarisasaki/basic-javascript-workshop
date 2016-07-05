@@ -191,3 +191,32 @@ function sumOfNumOfArray(inputArray) {
 
 var numArray = [3,5,7,2,8,10];
 console.log(sumOfNumOfArray(numArray));
+
+
+//Q15: Take two arrays with numbers, then return an array of all elements that are only in one array.
+function uniqueNum(inputArray1, inputArray2) {
+    
+    var unique = [];
+    
+    for (var i = 0; i < inputArray1.length; i++){
+        if (inputArray2.indexOf(inputArray1[i])  === -1) {
+            unique.push(inputArray1[i])
+        }
+    }
+    
+    for (var i = 0; i < inputArray2.length; i++){
+        if (inputArray1.indexOf(inputArray2[i])  === -1) {
+            unique.push(inputArray2[i])
+        }
+    }
+    
+    
+    return unique;
+}
+
+var listNum1 = [1,2,3,4,5];
+var listNum2 = [1,3,4,6,7,9];
+
+console.log(uniqueNum(listNum1, listNum2));
+
+
