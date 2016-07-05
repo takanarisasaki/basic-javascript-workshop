@@ -94,3 +94,19 @@ function repeatedString(inputString, numRepeated) {
 }
 
 console.log(repeatedString("My bad", 10));
+
+
+//Question 8: Reverse String
+
+function reverse(inputString) {
+    var reversedString = "";
+    for (var i = inputString.length; i > 0; i--) {
+        reversedString += inputString.charAt(i - 1);
+    }
+    return reversedString;
+}
+
+console.log(reverse("Hello"));
+console.log(reverse("I'm sleepy!"));
+console.log(reverse("    "));
+
