@@ -138,3 +138,19 @@ function longestWord(inputString) {
 console.log(longestWord("Hello, my name is Takanari Sasaki"));
 
 
+//Q11: Every word in a String capitalized
+function capitalizeEveryWord(inputString) {
+    var lowerCaseString = inputString.toLowerCase();
+    var splitString = lowerCaseString.split(" ");
+    var phrase = "";
+
+    for (var i = 0; i < splitString.length; i++) {
+        var firstLetter = splitString[i].charAt(0);
+        var capitalFirstLetter = firstLetter.toUpperCase();
+        var capitalFirstWord = capitalFirstLetter + splitString[i].substring(1,splitString[i].length);
+        phrase = phrase + " " + capitalFirstWord; 
+    }
+    return phrase;
+}
+
+console.log(capitalizeEveryWord("HellO, my naMe is TakaNari"));
