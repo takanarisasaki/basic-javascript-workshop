@@ -40,3 +40,13 @@ console.log(sum);
 //When you pass a boolean, true is 1 and false is 0, giving its sum
 var sum2 = addTwoNum(false, 52);
 console.log(sum2);
+
+//Takes two numbers and multiply them
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+
+console.log(multiply(6,9));
+//When a string is the input, it returns NaN (Not a Number)
+console.log(multiply("hello", 6));
+console.log(multiply("hello", "bye"));
