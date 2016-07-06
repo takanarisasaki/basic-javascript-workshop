@@ -205,12 +205,14 @@ function uniqueNum(inputArray1, inputArray2) {
     }
     
     for (var i = 0; i < inputArray2.length; i++){
+        //The indexOf() method searches the array for the specified item, and returns its 
+        //position. The search will start at the specified position, or at the beginning 
+        //if no start position is specified, and end the search at the end of the array.
+        //Returns -1 if the item is not found.
         if (inputArray1.indexOf(inputArray2[i])  === -1) {
             unique.push(inputArray2[i])
         }
     }
-    
-    
     return unique;
 }
 
@@ -220,3 +222,18 @@ var listNum2 = [1,3,4,6,7,9];
 console.log(uniqueNum(listNum1, listNum2));
 
 
+//Q16: Mini-Challenge on Mapping
+function map(inputArray, addThreeNum) {
+    var emptyArray = [];
+    for (var i = 0; i < inputArray.length; i++) {
+        addThreeNum(inputArray[i]);
+        emptyArray.push(addThreeNum(inputArray[i]));
+    }
+    
+}
+
+function addThreeNum(num1,num2,num3) {
+    return num1 + num2 + num3;
+}
+
+var inputArray = [1,2,3];
